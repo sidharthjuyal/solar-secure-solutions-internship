@@ -10,4 +10,8 @@ Task 7 : Commenting in HTML.<br />
 Task 8 : Creating Lists<br />
 Task 9 : Dealing with images .<br />
 Task 10 : Making Tables.<br />
+Task 11 : Default Styling (User Agent Style Sheet).<br />
+Task 12 : Inline styling<br />
+Task 13 : Id’s and classes<br />
+Task 14 : Internal & External Styling<br />
 
