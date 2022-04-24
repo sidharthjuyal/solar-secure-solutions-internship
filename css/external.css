@@ -1,0 +1,14 @@
+div {
+    width: 50%;
+    height: 500px;
+    background-color: greenyellow;
+    border-radius: 10px;
+}
+
+h1 {
+    background-color: gray;
+}
+
+p {
+    font-size: large;
+}
