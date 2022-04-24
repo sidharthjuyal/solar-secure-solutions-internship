@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;400&display=swap');
+
+/* css reset */
+*{
+    margin:0;
+    padding:0;
+}
+
+:root{
+    /* basics */
+    --h2:2rem;
+    --p:1.5rem;
+    --btn:0.9rem;
+    --text:hsla(120,0%,20%);
+
+    /* buttons */
+    --btn-normal:hsla(120,100%,25%);
+    --btn-hover:hsla(120,100%,20%);
+    --btn-active:hsla(120,100%,15%);
+
+    /* responsive */
+    --small-h2:1rem;
+    --small-p:0.7rem;
+    --small-btn:0.6rem;
+    --medium-h2:1.5rem;
+    --medium-p:1.2rem;
+}
+
+body{
+    font-family:'poppins',sans-serif;
+    background-image: linear-gradient(90deg, purple,rebeccapurple);
+    color:white;
+}
+
+#counter-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#counter{
+    text-align: center;
+    line-height: 4rem;
+    background-color: #fff;
+    color:var(--text);
+    padding:1.5rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+    width:420px;
+    margin:0 2rem;
+}
+
+.counter__header{
+   font-size:var(--h2);
+}
+
+.counter__para{
+   font-size:var(--p);
+   font-weight: bold;
+}
+
+.btn{
+    margin:0 1rem;
+    padding:10px 20px;
+    border-radius:5px;
+    border:none;
+    color:white;
+    background-color: var(--btn-normal);
+    font-size:var(--btn);
+    transition: 0.2s;
+}
+
+.btn:hover{
+    background-color:var(--btn-hover);
+    transform: scale(1.05);
+}
+
+.btn:active{
+    background-color:var(--btn-active);
+}
+
+@media screen and (max-width:600px){
+    .counter__header{
+        font-size: var(--medium-h2);
+    }
+    .counter__para{
+        font-size: var(--medium-p);
+    }
+   .btn:first-child{
+       margin-top:0.7rem;
+   }
+   .btn__container{
+       display:grid;
+       grid-template-columns: 1fr;
+       gap: 1rem;
+   }
+   #counter{
+       line-height:2.7rem;
+   }
+}
+
+@media screen and (max-width:450px){
+    .counter__header{
+        font-size: var(--small-h2);
+    }
+    .counter__para{
+        font-size: var(--small-p);
+    }
+    .btn{
+        font-size: var(--small-btn);
+    }
+}
