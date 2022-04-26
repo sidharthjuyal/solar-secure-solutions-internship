@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;400&display=swap');
+
+/* css reset */
+*{
+    margin:0;
+    padding:0;
+}
+
+:root{
+    /* basics */
+    --h2:2rem;
+    --p:1.5rem;
+    --btn:0.9rem;
+    --text:hsla(120,0%,20%);
+
+    /* buttons */
+    --btn-normal:hsla(120,60%,35%);
+    --btn-hover:hsla(120,100%,20%);
+    --btn-active:hsla(120,100%,15%);
+
+    /* responsive */
+    --small-h2:1rem;
+    --small-p:0.7rem;
+    --small-btn:0.6rem;
+    --medium-h2:1.5rem;
+    --medium-p:1.2rem;
+}
+
+body{
+    font-family:sans-serif;
+    background-image: linear-gradient(90deg, purple,rebeccapurple);
+    color:white;
+}
+
+#calculator-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+#calculator{
+    width:400px;
+    margin:0 2rem;
+    padding:2rem 1.5rem 3rem 1.5rem;
+    background-image: linear-gradient(180deg,white,rgb(201, 224, 232));
+    border-radius: 5px;
+    box-shadow: 4px 4px 6px rgba(0,0,0,0.3);
+}
+
+#calculator h2{
+    color:var(--text);
+    text-align: center;
+    margin:0 0 2rem 0;
+    font-size: var(--h2);
+    /* letter-spacing: 0.2rem ; */
+}
+
+button{
+    padding:10px 20px;
+    border-radius:5px;
+    border:none;
+    color:white;
+    background-color: var(--btn-normal);
+    font-size:var(--btn);
+    box-shadow: inset -2px -2px 3px rgba(0,0,0,0.3),inset 2px 2px 3px rgba(255,255,255,0.3);
+}
+
+button:hover{
+    background-color:var(--btn-hover);
+    transform: scale(1.05);
+}
+
+button:active{
+    background-color:var(--btn-active);
+    box-shadow: inset 2px 2px 3px rgba(0,0,0,0.3),inset -2px -2px 3px rgba(255,255,255,0.3);
+}
+
+.button__container{
+    display:grid;
+    grid-template-columns: repeat(3,1.5fr) 1fr;
+    gap:1rem;
+    margin-top: 1rem;
+}
+
+.input__container{
+    display:grid;
+    grid-template-columns: 5fr 1fr;
+    gap:1rem;
+}
+
+input[type="text"]{
+    padding:0 1rem;
+    font-size:var(--mediuam-p);
+}
+
+@media screen and (max-width: 350px)
+{
+    #calculator{
+        width:250px;
+    }
+    #calculator h2{
+        font-size: var(--medium-h2);
+    }
+    .button__container{
+        gap:0.2rem;
+    }
+    .input__container{
+        gap:0.2rem;
+    }
+    input[type="text"]{
+        padding:0 0 0 1rem;
+        font-size:var(--small-p);
+    }
+}
