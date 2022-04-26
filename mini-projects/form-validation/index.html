@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <title>Contact form</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+                <h2>
+                    Contact Us
+                </h2>
+                <input id="i1" type="text" class="field" placeholder="Enter Name">
+                <p id="error1" class="error">username should be 8 letters long</p>
+
+                <input id="i2" type="email" class="field" placeholder="Enter Email">
+                <p id="error2" class="error">invalid email</p>
+
+                <input id="i3" type="password" class="field" placeholder="Enter Password">
+                <p id="error3" class="error">should contain a number, special character and an uppercase letter</p>
+
+                <input id="i4" type="password" class="field" placeholder="Confirm Password"></input>
+                <p id="error4" class="error">the password does not match</p>
+
+                <button id="send" class="btn">Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
